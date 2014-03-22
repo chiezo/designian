@@ -2,27 +2,27 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <title>新幹線検索・予約サービス</title>
   <!--CSS-->
   <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" hef="css/style.css" />
 
 </head>
 <body>
-
-<section id="wrapper" class="wrapper">
+<section id="wrapper" class="wrapper container">
     <header>
       <span>エクスプレス予約</span>
     </header>
 
-<form id="js-form" data-href="result_forward.html" data-direction="forward">
+
+<form id="js-form" data-href="result_forward.html" data-direction="forward" role="form">
 
   <div class="content">
 
-        <p class="input-label">乗車駅</p>
-        <select name="from">
+  <div class="form-group">
+    <label for="FROM">乗車駅</label>
+        <select name="from" id="FROM">
           <option value="1">品川</option>
           <option value="2">新横浜</option>
           <option value="3">小田原</option>
@@ -58,9 +58,10 @@
           <option value="33">小倉（福岡）</option>
           <option value="34">博多</option>
         </select>
-
-        <p class="input-label">降車駅</p>
-        <select name="to">
+  </div>
+  <div class="form-group">
+    <label for="TO">降車駅</label>
+        <select name="to" id="TO">
           <option value="1">品川</option>
           <option value="2">新横浜</option>
           <option value="3">小田原</option>
@@ -96,6 +97,7 @@
           <option value="33">小倉（福岡）</option>
           <option value="34">博多</option>
         </select>
+  </div>
 
     <div id="form">
       <p class="input-label">乗車日</p>
@@ -237,7 +239,6 @@
   </div>
 
 </form>
-
 </section>
 <div id="page2" class="container"></div>
 
