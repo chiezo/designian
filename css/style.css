@@ -74,6 +74,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428bca', end
 	color: #fff;
 	text-shadow: 1px 1px 0px rgba(255, 146, 45,1);
 }
+#js-complete-backword {
+	border: none;
+	margin: 20px 0;
+}
 input[name="people"] {
 	width: 20%;
 	display: inline-block;
@@ -111,6 +115,7 @@ color: #fff;
 	margin-top: 20px;
 }
 .btn-to-top {
+	margin: 10px 0;
 	text-decoration: none;
 	border: 1px solid #ccc;
 	padding: 10px 15px;
@@ -141,4 +146,8 @@ color: #fff;
 	margin: 0;
 	padding: 0;
 	padding-left: 20px;
+}
+.content #forward {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
 }
