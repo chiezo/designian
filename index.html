@@ -277,6 +277,7 @@
       var _value = $(e.target).attr("value");
       var _array = $("input[name='timeOption']");
       $(_array).each(function(){
+        $(this).attr('checked', false);
         if($(this).attr("value") == _value) {
           $(this).attr('checked', 'checked');
         }
