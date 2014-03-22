@@ -237,153 +237,11 @@
     </label>
   </div>
   <p>
-    <button type="button" class="btn btn-lg btn-block submit-button">この条件で検索する</button>
+  <input class="btn btn-lg btn-block submit-button" type="submit" value="この条件で検索する">
   </p>
   </div>
 
 </form>
-  <!--
-    <div id="form">
-      <p class="input-label">乗車日</p>
-      <input type="hidden" name="year" value="2014">
-      <select id="month" name="month">
-        <option selected="selected" value="01">1</option>
-        <option value="02">2</option>
-        <option value="03">3</option>
-        <option value="04">4</option>
-        <option value="05">5</option>
-        <option value="06">6</option>
-        <option value="07">7</option>
-        <option value="08">8</option>
-        <option value="09">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-      </select>
-      <span class="">月</span>
-      <select id="day" name="day">
-        <option value="01">1</option>
-        <option value="02">2</option>
-        <option value="03">3</option>
-        <option value="04">4</option>
-        <option value="05">5</option>
-        <option value="06">6</option>
-        <option value="07">7</option>
-        <option value="08">8</option>
-        <option value="09">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option selected="selected" value="12">12</option>
-        <option value="13">13</option>
-        <option value="14">14</option>
-        <option value="15">15</option>
-        <option value="16">16</option>
-        <option value="17">17</option>
-        <option value="18">18</option>
-        <option value="19">19</option>
-        <option value="20">20</option>
-        <option value="21">21</option>
-        <option value="22">22</option>
-        <option value="23">23</option>
-        <option value="24">24</option>
-        <option value="25">25</option>
-        <option value="26">26</option>
-        <option value="27">27</option>
-        <option value="28">28</option>
-        <option value="29">29</option>
-        <option value="30">30</option>
-        <option value="31">31</option>
-      </select>
-      <span class="">日</span>
-
-
-      <p class="input-label">時刻</p>
-
-        <select id="time" name="hour">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option selected="selected" value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-        </select>
-        <span class="fmgh fontb">時</span>
-
-        <select id="minute" name="minute">
-          <option value="00">00</option>
-          <option value="05">05</option>
-          <option selected="selected" value="10">10</option>
-          <option value="15">15</option>
-          <option value="20">20</option>
-          <option value="25">25</option>
-          <option value="30">30</option>
-          <option value="35">35</option>
-          <option value="40">40</option>
-          <option value="45">45</option>
-          <option value="50">50</option>
-          <option value="55">55</option>
-        </select>
-        <span class="fmgh fontb">分</span>
-
-        <div class="input-radio">
-          <input type="radio" name="timeOption" value="1" checked>出発
-          <input type="radio" name="timeOption" value="2">到着
-          <input type="radio" name="timeOption" value="3">始発
-          <input type="radio" name="timeOption" value="4">終電
-          <input type="radio" name="timeOption" value="5">今すぐ
-        </div>
-
-
-
-
-        <p class="input-label">人数</p>
-        <input type="text" size="5" class="text-input" min="1" value="1" name="people">
-        <span>人</span>
-
-         <p class="input-label">きっぷの種類</p>
-        <div class="input-radio">
-          <input type="radio" name="ticketType" value="自由席" checked>自由席
-          <input type="radio" name="ticketType" value="指定席">指定席
-          <input type="radio" name="ticketType" value="グリーン">グリーン
-        </div>
-
-        <p class="input-label">往復</p>
-        <div class="input-radio">
-          <input type="radio" name="roundTrip" value="0" checked>片道
-          <input type="radio" name="roundTrip" value="1">往復
-        </div>
-        <p class="input-label">表示件数</p>
-        <div class="input-radio">
-          <label><input type="radio" name="resultCounts" value="5" checked>5</label>
-          <label><input type="radio" name="resultCounts" value="10">10</label>
-          <label><input type="radio" name="resultCounts" value="20">20</label>
-        </div>
-
-        <p><input class="btn-large" type="submit" value="検索する"><p>
-      </div>
-
-  </div>
-
-</form>
--->
 </section>
 <div id="page2" class="container"></div>
 
@@ -401,9 +259,6 @@
 <script src="js/index.js"></script>
 <script>
   sessionStorage.clear();
-  $(function(){
-    $('#dp1').datepicker()
-  })
 </script>
 
 </body>
