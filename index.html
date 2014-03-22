@@ -101,18 +101,16 @@
         </select>
   </div>
   <ul class="nav nav-tabs nav-pills">
-    <li class="active"><a href="#" data-toggle="tab">出発</a></li>
-    <li><a href="#" data-toggle="tab">到着</a></li>
-    <li><a href="#" data-toggle="tab">始発</a></li>
-    <li><a href="#" data-toggle="tab">終電</a></li>
-    <!-- <li><a href="#" data-toggle="tab">今すぐ</a></li> -->
+    <li class="active"><a href="#" data-toggle="tab" value="1">出発</a></li>
+    <li><a href="#" data-toggle="tab" value="2">到着</a></li>
+    <li><a href="#" data-toggle="tab" value="3">始発</a></li>
+    <li><a href="#" data-toggle="tab" value="4">終電</a></li>
   </ul>
   <div id="" class="input-radio" style="display:none;">
     <input type="radio" name="timeOption" value="1">出発
     <input type="radio" name="timeOption" value="2">到着
-    <input type="radio" name="timeOption" value="3" >始発
+    <input type="radio" name="timeOption" value="3">始発
     <input type="radio" name="timeOption" value="4">終電
-    <input type="radio" name="timeOption" value="5">今すぐ
   </div>
 
   <style>
@@ -265,6 +263,19 @@
 <script src="js/index.js"></script>
 <script>
   sessionStorage.clear();
+  $(function(){
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      var _value = $(e.target).attr("value");
+      var _array = $("input[name='timeOption']");
+      $(_array).each(function(){
+        if($(this).attr("value") == _value) {
+          $(this).attr('checked', 'checked');
+        }
+      })
+
+    });
+  });
+
 </script>
 
 </body>
