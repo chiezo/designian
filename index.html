@@ -100,39 +100,153 @@
           <option value="34">博多</option>
         </select>
   </div>
-  <ul class="nav nav-tabs nav-justified">
+  <ul class="nav nav-tabs">
     <li class="active"><a href="#" data-toggle="tab">出発</a></li>
     <li><a href="#" data-toggle="tab">到着</a></li>
     <li><a href="#" data-toggle="tab">始発</a></li>
     <li><a href="#" data-toggle="tab">終電</a></li>
     <li><a href="#" data-toggle="tab">今すぐ</a></li>
   </ul>
-  <p><input type="text" id="dp1" class="form-control"></p>
-  <div class="row">
-    <div class="col-xs-4">
-      <input type="text" class="form-control" placeholder="時">
-    </div>
-    <div class="col-xs-4">
-      <input type="text" class="form-control" placeholder="分">
-    </div>
+  <div id="" class="input-radio" style="display:none;">
+    <input type="radio" name="timeOption" value="1">出発
+    <input type="radio" name="timeOption" value="2">到着
+    <input type="radio" name="timeOption" value="3" >始発
+    <input type="radio" name="timeOption" value="4">終電
+    <input type="radio" name="timeOption" value="5">今すぐ
   </div>
+  <style>
+  select.form-inline {
+    width: auto;
+    display: inline;
+
+  }
+  </style>
+  <input type="hidden" name="year" value="2014">
+  <p>
+    <select id="month" name="month" class="form-control form-inline">
+      <option selected="selected" value="01">1</option>
+      <option value="02">2</option>
+      <option value="03">3</option>
+      <option value="04">4</option>
+      <option value="05">5</option>
+      <option value="06">6</option>
+      <option value="07">7</option>
+      <option value="08">8</option>
+      <option value="09">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    月
+    <select id="day" name="day" class="form-control form-inline">
+      <option value="01">1</option>
+      <option value="02">2</option>
+      <option value="03">3</option>
+      <option value="04">4</option>
+      <option value="05">5</option>
+      <option value="06">6</option>
+      <option value="07">7</option>
+      <option value="08">8</option>
+      <option value="09">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option selected="selected" value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+    </select>
+    日
+  </p>
+  <p>
+    <select id="time" name="hour" class="form-control form-inline">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option selected="selected" value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+    </select>
+    時
+    <select id="minute" name="minute" class="form-control form-inline">
+      <option value="00">00</option>
+      <option value="05">05</option>
+      <option selected="selected" value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
+      <option value="35">35</option>
+      <option value="40">40</option>
+      <option value="45">45</option>
+      <option value="50">50</option>
+      <option value="55">55</option>
+    </select>
+    分
+  </p>
+
+
+
+  <p class="input-label">人数</p>
+        <input type="text" size="5" min="1" value="1" name="people" class="form-control" >
+        <span>人</span>
 
   <p>種類</p>
   <div class="btn-group btn-group-lg" data-toggle="buttons">
     <label class="btn btn-primary">
-      <input type="radio" name="options" id="option1"> 自由席
+      <input type="radio" name="ticketType" id="option1" value="自由席"> 自由席
     </label>
     <label class="btn btn-primary">
-      <input type="radio" name="options" id="option2"> 指定席
+      <input type="radio" name="ticketType" id="option2" value="指定席"> 指定席
     </label>
     <label class="btn btn-primary">
-      <input type="radio" name="options" id="option3"> グリーン車
+      <input type="radio" name="ticketType" id="option3" value="グリーン"> グリーン車
     </label>
   </div>
-  <p>
-    <button type="button" class="btn btn-primary btn-lg btn-block">この条件で検索する</button>
-  </p>
+
+
+
+        <div class="input-radio" style="display:none;">
+
+          <label><input type="radio" name="resultCounts" value="20" checked>20</label>
+        </div>
+
+  <p><input class="btn btn-primary btn-lg btn-block" type="submit" value="この条件で検索する"></p>
   </div>
+
 </form>
   <!--
     <div id="form">
