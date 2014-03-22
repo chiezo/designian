@@ -60,7 +60,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428bca', end
 	background: #3276B1;
 	color: #fff;
 }
+#js-complete-forward,
 .submit-button {
+	width: 100%;
 	background: #428bca; /* Old browsers */
 	background: -moz-linear-gradient(top,  #428bca 0%, #ffd154 0%, #ff922d 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#428bca), color-stop(0%,#ffd154), color-stop(100%,#ff922d)); /* Chrome,Safari4+ */
