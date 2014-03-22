@@ -1,4 +1,13 @@
 @charset "UTF-8";
+header {
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #428BCA;
+	/*background-color: #151515;*/
+	text-align: center;
+	margin-bottom: 10px;
+}
+
 .nav-tabs {
 	border-bottom: 4px solid #428BCA;
 	margin-bottom: 10px;
@@ -11,6 +20,7 @@
 	border-top: 1px solid #ccc;
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
+	color: #666;
 	background: #428bca; /* Old browsers */
 background: -moz-linear-gradient(top,  #428bca 0%, #ffffff 0%, #f9f9f9 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#428bca), color-stop(0%,#ffffff), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
@@ -33,11 +43,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428bca', end
 }
 .btn-group-lg label.btn {
 	border: 1px solid #ccc;
+	color: #666;
 	font-size: 14px;
+	background: #428bca; /* Old browsers */
+	background: -moz-linear-gradient(top,  #428bca 0%, #ffffff 0%, #f9f9f9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#428bca), color-stop(0%,#ffffff), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #428bca 0%,#ffffff 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #428bca 0%,#ffffff 0%,#f9f9f9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #428bca 0%,#ffffff 0%,#f9f9f9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #428bca 0%,#ffffff 0%,#f9f9f9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428bca', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
 }
 .btn-group-lg label.btn.active {
 	box-shadow: none;
-	background-color: #3276B1;
+	background: #3276B1;
 	color: #fff;
 }
 .submit-button {
@@ -50,4 +69,9 @@ background: -ms-linear-gradient(top,  #428bca 0%,#428bca 0%,#1e5799 100%); /* IE
 background: linear-gradient(to bottom,  #428bca 0%,#428bca 0%,#1e5799 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428bca', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
 	color: #fff;
+}
+input[name="people"] {
+	width: 20%;
+	display: inline-block;
+	margin-right: 5px;
 }
