@@ -1,0 +1,6 @@
+Gruntfile.*
+package.json
+/README.md
+/Gruntconfig
+/node_modules
+.sass-cache

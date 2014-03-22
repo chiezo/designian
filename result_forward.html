@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>検索結果</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+<div id="wrapper" class="wrapper">
+  <header>
+    <span>エクスプレス予約</span>
+  </header>
+  <div class="content">
+    <h1>検索結果</h1>
+    <div id="js-searchResult">
+
+    </div>
+    <div class="mod-paginate">
+      <button id="prev" class="mod-paginate-btn is-prev"></button>
+      <button id="next" class="mod-paginate-btn is-next"></button>
+    </div>
+  </div>
+</div>
+
+<!-- script -->
+<script src="js/lib/jquery-1.10.2.js"></script>
+<script src="js/lib/moment-with-langs.min.js"></script>
+<script src="js/lib/underscore-min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/searchTicket.js"></script>
+<script>
+$(function() {
+  var outputId = "js-searchResult";
+  var templateName = "searchResultItem";
+  var search_index = 0;
+  var search_count =  parseInt(util.getSessionStorage("d-searchResult-count"));
+
+  st.displaySearchResult({
+    outputId: outputId,
+    templateName: templateName,
+    index: 0
+  });
+
+  $("#next").on("click", function() {
+    st.paginateNext({
+      outputId: outputId,
+      templateName: templateName
+    });
+  });
+
+  $("#prev").on("click", function() {
+    st.paginatePrev({
+      outputId: outputId,
+      templateName: templateName
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>
