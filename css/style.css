@@ -1,130 +1,53 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  -webkit-text-adjust: 100%;
-  font-size: 14px;
-  font-family: 'Hiragino Kaku Gothic ProN',Meiryo,sans-serif; }
+@charset "UTF-8";
+.nav-tabs {
+	border-bottom: 4px solid #428BCA;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.nav-tabs li,.nav-tabs li a {
+	border-radius: 5px 5px 0 0;
+}
+.nav-tabs li a {
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #428bca; /* Old browsers */
+background: -moz-linear-gradient(top,  #428bca 0%, #ffffff 0%, #f9f9f9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#428bca), color-stop(0%,#ffffff), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #428bca 0%,#ffffff 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #428bca 0%,#ffffff 0%,#f9f9f9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #428bca 0%,#ffffff 0%,#f9f9f9 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #428bca 0%,#ffffff 0%,#f9f9f9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428bca', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
 
-p {
-  margin: 0;
-  padding: 0; }
-
-ul, li {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  padding: 0;
-  margin: 0; }
-
-.wrapper {
-  width: 320px;
-  margin: 0 auto; }
-
-.input-label {
-  font-size: 1.4em; }
-
-.input-radio {
-  padding: 10px 0; }
-  .input-radio label {
-    vertical-align: middle; }
-  .input-radio input[type="radio"] {
-    vertical-align: middle;
-    margin-right: 5px;
-    height: 20px;
-    width: 20px; }
-
-header {
-  height: 44px;
-  background-color: #ccc;
-  font-size: 1.8em; }
-
-select, .text-input {
-  height: 35px; }
-
-.content {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 5px; }
-  .content h1:first-of-type {
-    border-bottom: 1px solid #000; }
-
-.amount {
-  font-size: 20px;
-  font-weight: 600;
-  text-align: right; }
-
-.btn-large {
-  width: 200px;
-  line-height: 30px;
-  font-size: 14px;
-  text-align: center;
-  margin: 10px auto;
-  display: block; }
-
-.mod-searchResult {
-  position: relative;
-  padding: 10px 0;
-  border-bottom: 1px solid #000; }
-  .mod-searchResult .mod-searchResult__name {
-    margin-bottom: 5px; }
-  .mod-searchResult .mod-searchResult__btn {
-    margin-left: 10px;
-    -webkit-appearance: none;
-    background-color: #999;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    padding: 5px 10px;
-    text-align: center; }
-  .mod-searchResult .mod-searchResult__detail {
-    display: inline-block;
-    vertical-align: middle; }
-  .mod-searchResult .mod-searchResult__seatType {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 30px;
-    right: 5px;
-    top: 50%; }
-
-.mod-ticket-forward,
-.mod-ticket-backward {
-  background-color: #ccc;
-  padding: 5px;
-  margin: 5px auto; }
-
-.mod-seatType {
-  -webkit-appearance: none;
-  border: none;
-  padding: 0;
-  text-align: center;
-  background-color: #DDD;
-  color: #999;
-  border: 1px solid #999;
-  width: 42px;
-  min-height: 42px;
-  font-size: 10px;
-  vertical-align: top;
-  border-radius: 3px;
-  pointer-events: none; }
-  .mod-seatType.is-available {
-    color: #E9E9E9;
-    border-color: #575757;
-    background-color: #929292;
-    pointer-events: auto; }
-
-.mod-paginate {
-  padding: 5px;
-  text-align: center; }
-  .mod-paginate .mod-paginate-btn {
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    margin: 5px 10px;
-    padding: 0; }
-    .mod-paginate .mod-paginate-btn.is-prev:before {
-      content: "<"; }
-    .mod-paginate .mod-paginate-btn.is-next:before {
-      content: ">"; }
+}
+.nav-tabs li.active a {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: #428BCA;
+}
+.btn-group-lg {
+	margin: 20px 0;
+	width: 100%;
+}
+.btn-group-lg label.btn {
+	border: 1px solid #ccc;
+	font-size: 14px;
+}
+.btn-group-lg label.btn.active {
+	box-shadow: none;
+	background-color: #3276B1;
+	color: #fff;
+}
+.submit-button {
+	background: #428bca; /* Old browsers */
+background: -moz-linear-gradient(top,  #428bca 0%, #428bca 0%, #1e5799 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#428bca), color-stop(0%,#428bca), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #428bca 0%,#428bca 0%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #428bca 0%,#428bca 0%,#1e5799 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #428bca 0%,#428bca 0%,#1e5799 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #428bca 0%,#428bca 0%,#1e5799 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428bca', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+}
